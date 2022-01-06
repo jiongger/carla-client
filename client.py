@@ -16,11 +16,11 @@ try:
 except ImportError:
     raise RuntimeError('cannot import numpy, make sure numpy package is installed')
 
-from lib.camera_utils import CustomCamera
-from lib.lidar_utils import CustomLidar
-from lib.kitti_utils import generate_kitti_label_file, generate_kitti_calib_file
-from lib.carla_utils import save_snapshot
-from lib.utils import make_dirs
+from clientlib.camera_utils import CustomCamera
+from clientlib.lidar_utils import CustomLidar
+from clientlib.kitti_utils import generate_kitti_label_file, generate_kitti_calib_file
+from clientlib.carla_utils import save_snapshot
+from clientlib.utils import make_dirs
 
 
 class SynchronousClient:
